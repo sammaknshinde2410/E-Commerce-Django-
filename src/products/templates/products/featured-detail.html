@@ -1,0 +1,21 @@
+
+
+{% extends "base.html" %}
+
+
+{% block content %}
+
+{{ object.title }}<br>
+{{ object.description }}<br>
+
+{% if object.image %}
+
+<!-- <br>
+<img src="{{ object.image.url }}" class="img-fluid"/> -->
+
+
+
+	<img src="{{ object.image.url }}" class="img-fluid"/>
+{% endif %}
+
+{% endblock %}
